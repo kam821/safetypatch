@@ -8,7 +8,7 @@ A1 - Initial alpha
 - Magisk Hide
 - Magisk Manager for TWRP Recovery (for when things go wrong)
 ## Instructions
-1. Flash in MM
+1. Flash in Magisk Manager
 2. Reboot
 ## Links
 [Module XDA Forum Thread](https://forum.xda-developers.com/apps/magisk/module-safetypatcher-t3809879 "Module official XDA thread")
