@@ -1,6 +1,6 @@
 # **SafetyPatcher**
 ## Description
-Fixes safetynet on most devices, after you've applied magiskhide
+Fixes safetynet basicIntegrity on most devices, after you've applied magiskhide
 ## Changelog
 A1 - Initial alpha
 ## Requirements
