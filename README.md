@@ -4,7 +4,7 @@ Fixes safetynet basicIntegrity on most devices, after you've applied magiskhide
 ## Changelog
 A1 - Initial alpha
 ## Requirements
-- No phh software, including GSI. It will be detected by safetynet.
+- No phh software, including GSI. It will be detected by safetynet. IF you have a GSI, you must use the MagiskHide Props Config to change your device fingerprint.
 - Magisk
 - Magisk Hide
 - Magisk Manager for TWRP Recovery (for when things go wrong)
@@ -22,4 +22,4 @@ Or to use without Magisk...
 ## Links
 [Module XDA Forum Thread](https://forum.xda-developers.com/apps/magisk/module-safetypatcher-t3809879 "Module official XDA thread")
 
-[Latest stable Magisk](http://www.tiny.cc/latestmagisk)
+[Latest stable Magisk](http://www.tiny.cc/latestmagisk) or Beta if you want
