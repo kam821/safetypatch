@@ -3,6 +3,7 @@
 Fixes safetynet basicIntegrity on most devices, after you've applied magiskhide
 ## Changelog
 A1 - Initial alpha
+v1 - Includes fixes for OP3 and other devices with messed up cases in the bootloader
 ## Requirements
 - No phh software, including GSI. It will be detected by safetynet. IF you have a GSI, you must use the MagiskHide Props Config to change your device fingerprint.
 - Magisk
