@@ -40,9 +40,11 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "********************************"
-  ui_print "* SafetyPatcher by hackintosh5 *"
-  ui_print "********************************"
+  ui_print "**************************************"
+  ui_print "*    SafetyPatcher by hackintosh5    *"
+  ui_print "* Simply flash the module and reboot *"
+  ui_print "*  More importantly thank me on XDA  *"
+  ui_print "**************************************"
 }
 
 ##########################################################################################
