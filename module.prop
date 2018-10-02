@@ -3,5 +3,5 @@ name=SafetyPatch
 version=v1.1
 versionCode=3
 author=hackintosh5
-description=Just flash the module and reboot. It is recommended to flash MM for recovery first, in case you need to remove the module, as, if it goes wrong somehow, you will be unable to do anything, even via ADB. The system will not boot, so you will need to clear the module via recovery.
+description=Flash the module, reboot and give me thanks on XDA :)
 minMagisk=1500
