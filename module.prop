@@ -4,4 +4,4 @@ version=v1.1
 versionCode=3
 author=hackintosh5 @ xdaDevelopers
 description=Flash the module, reboot and give me thanks on XDA :)
-minMagisk=1500
+minMagisk=1700
