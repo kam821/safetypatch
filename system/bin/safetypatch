@@ -33,4 +33,7 @@ function menu {
         echo 'Bye!'
         exit 0
     fi
-    
+}
+while true
+do menu
+done
