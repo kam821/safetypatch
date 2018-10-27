@@ -26,7 +26,7 @@ ui_print() { echo "$1"; }
 
 require_new_magisk() {
   ui_print "*******************************"
-  ui_print " Please install Magisk v15.0+! "
+  ui_print " Please install Magisk v17.0+! "
   ui_print "*******************************"
   exit 1
 }
