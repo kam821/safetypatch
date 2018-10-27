@@ -7,7 +7,7 @@ function menu {
     echo '# 2) Disable basicIntegrity until reboot  #'
     echo '# 3) Disable cts until reboot             #'
     echo '## Enter your choice or any key to exit. ##'
-    read -n1 ans
+    read ans
     if [ "$ans" == "1" ]
     then
         echo 'Gathering debug info to /sdcard/safetypatch.debug'
@@ -16,7 +16,7 @@ function menu {
         echo '---/data/local/tmp/cmdline---' >> /sdcard/safetypatch.debug
         cat /data/local/tmp/cmdline >> /sdcard/safetypatch.debug
         echo '---/system/build.prop---' >> /sdcard/safetypatch.debug
-        cat /system/build.[prop >> /sdcard/safetypatch.debug
+        cat /system/build.prop >> /sdcard/safetypatch.debug
         echo '---/data/local/tmp/build.prop---' >> /sdcard/safetypatch.debug
         cat /data/local/tmp/build.prop >> /sdcard/safetypatch.debug
         echo '--end of log---' >> /sdcard/safetypatch.debug
