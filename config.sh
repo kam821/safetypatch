@@ -22,7 +22,7 @@
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
-AUTOMOUNT=false
+AUTOMOUNT=true
 
 # Set to true if you need to load system.prop
 PROPFILE=false
@@ -43,7 +43,7 @@ print_modname() {
   ui_print "**************************************"
   ui_print "*    SafetyPatcher by hackintosh5    *"
   ui_print "* Simply flash the module and reboot *"
-  ui_print "*  More importantly thank me on XDA  *"
+  ui_print "* More importantly thank me on XDA;) *"
   ui_print "**************************************"
 }
 
@@ -56,7 +56,9 @@ print_modname() {
 
 # Construct your own list here, it will override the example above
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
-REPLACE=""
+REPLACE="
+/system/bin/safetypatch
+"
 
 ##########################################################################################
 # Permissions
@@ -78,6 +80,7 @@ set_permissions() {
 
   # The following is default permissions, DO NOT remove
   set_perm_recursive  $MODPATH  0  0  0755  0644
+  set_perm $MODPATH/system/bin/safetypatch  0 0 0554
 }
 
 ##########################################################################################
