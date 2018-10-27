@@ -1,20 +1,19 @@
 # **SafetyPatcher**
 ## Description
-Fixes safetynet basicIntegrity on most devices, after you've applied magiskhide
+Fixes safetynet basicIntegrity & CTS on most devices, after you've applied magiskhide
 ## Changelog
 - A1 - Initial alpha
 - v1 - Includes fixes for OP3 and other devices with messed up cases in the bootloader
+- V2 - Adds a load of stuff so that it now also has a GUI (run safetypatcher in shell as root) and also passes CTS.
 ## Requirements
-- No phh software, including GSI. It will be detected by safetynet. IF you have a GSI, you must use the MagiskHide Props Config to change your device fingerprint.
 - Magisk
-- Magisk Hide
-- Magisk Manager for TWRP Recovery (for when things go wrong)
+- Magisk Hide (https://www.didgeridoohan.com/magisk/MagiskHide)
 ## Instructions
 1. Flash in Magisk Manager
 2. Reboot
 3. Comment on XDA to share your experience
 
-Or to use without Magisk...
+Or to use without Magisk (TODO: update for V2)...
 
 1. Enable ADB.
 3. Run `adb shell sed 's/ORANGE/GREEN/i' /proc/cmdline | sed 's/YELLOW/GREEN/i' > /data/local/tmp/cmdline` from computer with connected and authorized ADB/USB
