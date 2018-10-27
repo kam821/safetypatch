@@ -4,8 +4,8 @@
 function menu {
     echo '############# SafetyPatch GUI #############'
     echo '# 1) Gather debug info                    #'
-    echo '# 2) Disable basicIntegrity until reboot  #'
-    echo '# 3) Disable cts until reboot             #'
+    echo '# 2) Disable cts until reboot             #'
+    echo '# 3) Disable basicIntegrity until reboot  #'
     echo '## Enter your choice or any key to exit. ##'
     read ans
     if [ "$ans" == "1" ]
