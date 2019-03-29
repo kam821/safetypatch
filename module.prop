@@ -1,7 +1,6 @@
 id=safetypatcher
 name=SafetyPatch
-version=v2
-versionCode=4
+version=v3
+versionCode=5
 author=hackintosh5 @ xdaDevelopers
 description=Flash the module, reboot and give me thanks on XDA :)
-minMagisk=1700
