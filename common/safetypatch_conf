@@ -1,0 +1,45 @@
+#!/system/bin/sh
+
+CMDLINE_SYSTEM_PATH="/proc/cmdline"
+CMDLINE_TEMP_PATH="/data/local/tmp/cmdline"
+
+PROP_SYSTEM_PATH="/system/build.prop"
+PROP_TEMP_PATH="/data/local/tmp/build.prop"
+
+CMDLINE_REPLACE_ENABLED=true
+CMDLINE_REPLACE_VALUE="
+  s/orange/green/g
+  s/yellow/green/g
+  s/ORANGE/GREEN/g
+  s/YELLOW/GREEN/g
+  s/androidboot\.selinux=permissive/androidboot.selinux=enforcing/"
+
+PROP_FINGERPRINT_ENABLED=false
+PROP_FINGERPRINT_VALUE="Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.9.0.OEAMIFA:user/release-keys"
+PROP_FINGERPRINT_VARS=(
+  ro.build.fingerprint
+  ro.bootimage.build.fingerprint
+  ro.odm.build.fingerprint
+  ro.system.build.fingerprint
+  ro.vendor.build.fingerprint
+)
+PROP_FINGERPRINT_SED="
+  s;^ro\.build\.fingerprint=.*;ro.build.fingerprint=${PROP_FINGERPRINT_VALUE};
+  s;^ro\.bootimage\.build\.fingerprint=.*;ro.bootimage.build.fingerprint=${PROP_FINGERPRINT_VALUE};
+  s;^ro\.odm\.build\.fingerprint=.*;ro.odm.build.fingerprint=${PROP_FINGERPRINT_VALUE};
+  s;^ro\.system\.build\.fingerprint=.*;ro.system.build.fingerprint=${PROP_FINGERPRINT_VALUE};
+  s;^ro\.vendor\.build\.fingerprint=.*;ro.vendor.build.fingerprint=${PROP_FINGERPRINT_VALUE};"
+
+PROP_SECURITYPATCH_ENABLED=false
+PROP_SECURITYPATCH_VALUE="2019-11-01"
+PROP_SECURITYPATCH_VARS=(
+  ro.build.version.security_patch
+  ro.vendor.build.security_patch
+)
+
+CHMOD_CHANGE_ENABLED=false
+CHMOD_CHANGE_VALUE="0440"
+CHMOD_CHANGE_PATHS=(
+  /proc/net/unix
+  /proc/filesystems
+)
