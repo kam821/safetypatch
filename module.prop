@@ -1,6 +1,6 @@
 id=safetypatcher
-name=SafetyPatch v4
-version=v4
-versionCode=33
+name=SafetyPatch
+version=v4.0.1
+versionCode=401
 author=kam821 & hackintosh5
 description=Hiding some props by replacing /proc/cmdline and build.prop values

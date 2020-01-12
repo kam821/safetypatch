@@ -11,6 +11,6 @@ MODDIR=${0%/*}
 
 if [ "$CHMOD_CHANGE_ENABLED" = true ]; then
   for CHMOD_CHANGE_PATH in "${CHMOD_CHANGE_PATHS[@]}"; do
-    chmod ${CHMOD_CHANGE_VALUE} "${CHMOD_CHANGE_PATH}" >&2
+    chmod ${CHMOD_CHANGE_VALUE} "${CHMOD_CHANGE_PATH}" 2>/dev/null
   done
 fi
